@@ -23,7 +23,7 @@ gulp.task('stylus', function () {
     return gulp.src('./src/stylus/style.styl')
         .pipe(stylus({use: ['nib']}))
         .pipe(csscomb())
-        .pipe(gulp.dest('./src/css'))
+        .pipe(gulp.dest('./assets/css'))
         .pipe(cssmin())
         .pipe(rename({
             basename: 'style', 
