@@ -1,3 +1,5 @@
+/* Шрифты */
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic');
 /* Normalize */
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html
@@ -232,8 +234,6 @@ th
 {
     padding: 0;
 }
-/* Шрифты */
-@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic');
 /* Глобальные стили */
 *
 {
@@ -253,7 +253,7 @@ th
 html,
 body
 {
-    font: normal 16px 'Arial', Verdana, Tahoma;
+    font: normal 16px 'PT Sans', Verdana, Tahoma;
 
     height: 100%;
 }
@@ -421,6 +421,54 @@ body
 .column_xs-12
 {
     width: 100%;
+}
+.column__offset_xs-1
+{
+    margin-left: 8.333333333333334%;
+}
+.column__offset_xs-2
+{
+    margin-left: 16.666666666666668%;
+}
+.column__offset_xs-3
+{
+    margin-left: 25%;
+}
+.column__offset_xs-4
+{
+    margin-left: 33.333333333333336%;
+}
+.column__offset_xs-5
+{
+    margin-left: 41.66666666666667%;
+}
+.column__offset_xs-6
+{
+    margin-left: 50%;
+}
+.column__offset_xs-7
+{
+    margin-left: 58.333333333333336%;
+}
+.column__offset_xs-8
+{
+    margin-left: 66.66666666666667%;
+}
+.column__offset_xs-9
+{
+    margin-left: 75%;
+}
+.column__offset_xs-10
+{
+    margin-left: 83.33333333333334%;
+}
+.column__offset_xs-11
+{
+    margin-left: 91.66666666666667%;
+}
+.column__offset_xs-12
+{
+    margin-left: 100%;
 }
 /* Всплывающие окна */
 /* Responsive */
