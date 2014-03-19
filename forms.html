@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Gulp Boilerplate Forms</title>
+    <meta name="description" content="Short page description"/>
+    <meta name="keywords" content="first second third key word"/>
+    <link rel="stylesheet" href="assets/css/style.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="assets/js/libs/html5shiv-printshiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="page">
+        
+        <header class="header">
+            Элементы формы
+        </header>
+
+        <div class="main">
+            
+            <!-- Форма и ее элементы -->
+            <form action="" name="" class="form">
+                <fieldset class="form__field">
+                    <label class="form__label">
+                        <span class="form__label-title">Простое текстовое поле</span>
+                        <input type="text" name="form__input-1" class="form__input" />
+                    </label>
+                    <label class="form__label">
+                        <span class="form__label-title">Простое текстовое поле</span>
+                        <input type="checkbox" name="form__input-2" class="form__checkbox" />
+                    </label>
+                    <label class="form__label">
+                        <span class="form__label-title">Простое текстовое поле</span>
+                        <select name="form__select-1" class="form__select" id="">
+                            <option value="1">Москва</option>
+                            <option value="2">Санкт-Петербург</option>
+                            <option value="3">Новосибирск</option>
+                            <option value="4">Екатеринбург</option>
+                        </select>
+                    </label>
+                    <label class="form__label">
+                        <span class="form__label-title">Простое текстовое поле</span>
+                        <textarea name="form__text-1" id="" class="form__textarea" cols="30" rows="10"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset class="form__field">
+                    <span class="form__label-title">Простое текстовое поле</span>
+                    <span class="form__answer">
+                        <label class="form__radio-wrapper">
+                            <input type="radio" name="sex" value="man" /> Мужчина
+                        </label>
+                        <label class="form__radio-wrapper">
+                            <input type="radio" name="sex" value="woman" /> Женщина
+                        </label>
+                    </span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="form__label">
+                        <span class="form__label-title">Простое текстовое поле</span>
+                        <input type="file" name="form__file-1" class="form__file" />
+                    </label>
+                </fieldset>
+            </form>
+        
+        </div>
+
+        <footer class="footer"></footer>
+
+    </div>
+
+    <script src="src/js/common.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>

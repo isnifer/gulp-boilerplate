@@ -264,7 +264,87 @@ body
     min-height: 100%;
 }
 /* Шапка */
+.header
+{
+    font-size: 3em;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
 /* Основной контент */
 /* Боковое меню */
 /* Подвал */
+/* Форма */
+.form
+{
+    position: relative;
+
+    width: 605px;
+}
+.form__field
+{
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+.form__label
+{
+    display: block;
+
+    padding: 5px 0;
+}
+.form__label-title
+{
+    display: inline-block;
+
+    width: 200px;
+
+    vertical-align: top;
+}
+.form__input,
+.form__select,
+.form__textarea
+{
+    font-size: .875em;
+
+    width: 400px;
+
+    border: 1px solid #a0a0a0;
+    outline: none;
+}
+.form__input
+{
+    height: 30px;
+}
+.form__input,
+.form__textarea
+{
+    padding: 0 5px;
+}
+.form__input:focus,
+.form__textarea:focus
+{
+    box-shadow: 0 0 2px 2px #ffe500;
+}
+.form__select
+{
+    width: 200px;
+}
+.form__textarea
+{
+    padding: 3px 5px;
+
+    resize: vertical;
+}
+.form__answer
+{
+    display: inline-block;
+
+    width: 400px;
+}
+.form__radio-wrapper
+{
+    display: block;
+}
 /* Всплывающие окна */
