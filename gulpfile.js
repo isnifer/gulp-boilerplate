@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     uglify = require('gulp-uglify'),
     csscomb = require('gulp-csscomb'),
-    cssmin = require('gulp-minify-css'),
+    cssmin = require('gulp-csso'),
     rename = require('gulp-rename'),
     livereload = require('gulp-livereload');
 
