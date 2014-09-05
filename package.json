@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iSnifer/grunt-boilerplate.git"
+    "url": "https://github.com/iSnifer/gulp-boilerplate.git"
   },
   "devDependencies": {
     "gulp": "~3.8.7",
