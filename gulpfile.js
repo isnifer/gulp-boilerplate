@@ -7,8 +7,8 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload');
 
 var paths = {
-    scripts: './src/js/common.js',
-    styles: './src/stylus/**.styl'
+    scripts: 'src/js/common.js',
+    styles: ['src/stylus/*.styl', 'src/stylus/**/*.styl']
 };
 
 gulp.task('uglify', function () {
