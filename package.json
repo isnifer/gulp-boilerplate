@@ -17,6 +17,6 @@
     "gulp-csscomb": "latest",
     "gulp-csso": "latest",
     "gulp-rename": "latest",
-    "gulp-livereload": "latest"
+    "gulp-connect": "latest"
   }
 }

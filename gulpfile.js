@@ -1,14 +1,15 @@
-var gulp = require('gulp'),
-    stylus = require('gulp-stylus'),
-    uglify = require('gulp-uglify'),
-    csscomb = require('gulp-csscomb'),
-    cssmin = require('gulp-csso'),
-    rename = require('gulp-rename'),
-    livereload = require('gulp-livereload');
+var gulp = require('gulp');
+var stylus = require('gulp-stylus');
+var uglify = require('gulp-uglify');
+var csscomb = require('gulp-csscomb');
+var cssmin = require('gulp-csso');
+var rename = require('gulp-rename');
+var connect = require('gulp-connect');
 
 var paths = {
     scripts: 'src/js/common.js',
-    styles: ['src/stylus/*.styl', 'src/stylus/**/*.styl']
+    styles: ['src/stylus/*.styl', 'src/stylus/**/*.styl'],
+    html: ['./*.html']
 };
 
 gulp.task('uglify', function () {
@@ -16,7 +17,7 @@ gulp.task('uglify', function () {
         .pipe(uglify({mangle: true, compress: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./assets/js'))
-        .pipe(livereload());
+        .pipe(connect.reload());
 });
 
 gulp.task('stylus', function () {
@@ -26,21 +27,30 @@ gulp.task('stylus', function () {
         .pipe(gulp.dest('./assets/css'))
         .pipe(cssmin())
         .pipe(rename({
-            basename: 'style', 
-            suffix: '.min', 
+            basename: 'style',
+            suffix: '.min',
             ext: '.css'
         }))
         .pipe(gulp.dest('./assets/css'))
-        .pipe(livereload());
+        .pipe(connect.reload());
+});
+
+gulp.task('html', function () {
+    return gulp.src(paths.html)
+        .pipe(connect.reload());
+});
+
+gulp.task('connect', function() {
+    connect.server({
+        root: './',
+        livereload: true
+    });
 });
 
 gulp.task('watch', function() {
-    var server = livereload();
-    gulp.watch('./*.html').on('change', function (file) {
-        server.changed(file.path);
-    });
+    gulp.watch(paths.html, ['html']);
     gulp.watch(paths.scripts, ['uglify']);
     gulp.watch(paths.styles, ['stylus']);
 });
 
-gulp.task('default', ['watch', 'uglify', 'stylus']);
+gulp.task('default', ['connect', 'watch', 'uglify', 'stylus']);
