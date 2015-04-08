@@ -1,0 +1,22 @@
+{
+  "name": "GulpBoilerplate",
+  "version": "0.1.0",
+  "main": "gulpfile.js",
+  "author": "isnifer",
+  "description": "Gulp Boilerplate",
+  "homepage": "http://isnifer.me",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iSnifer/gulp-boilerplate.git"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-stylus": "latest",
+    "gulp-uglify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-rename": "latest",
+    "gulp-connect": "latest"
+  }
+}
