@@ -14,7 +14,7 @@ var paths = {
 
 gulp.task('uglify', function () {
     return gulp.src(paths.scripts)
-        // .pipe(uglify({mangle: true, compress: true}))
+        .pipe(uglify({mangle: true, compress: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./build/js'))
         .pipe(connect.reload());
@@ -25,7 +25,7 @@ gulp.task('stylus', function () {
         .pipe(stylus())
         .pipe(csscomb())
         .pipe(gulp.dest('./build/css'))
-        // .pipe(cssmin())
+        .pipe(cssmin())
         .pipe(rename({
             basename: 'style',
             suffix: '.min',
