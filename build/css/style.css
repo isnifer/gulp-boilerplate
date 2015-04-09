@@ -415,6 +415,8 @@ body
 
     position: relative;
 
+    margin-top: 30px;
+
     color: #00a2c4;
 }
 .step__example:after
@@ -452,6 +454,102 @@ body
     padding-left: 150px;
 
     color: #555f64;
+}
+.formula:after,
+.formula:before
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+.formula__content
+{
+    font-size: 18px;
+
+    float: left;
+
+    width: 513px;
+    padding: 15px;
+
+    text-align: center;
+
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.14);
+       -moz-box-shadow: 0 2px 5px rgba(0,0,0,.14);
+            box-shadow: 0 2px 5px rgba(0,0,0,.14);
+}
+.formula__line
+{
+    line-height: 26px;
+}
+.formula__number,
+.formula__symbol
+{
+    font-size: 32px;
+}
+.formula__symbol
+{
+    color: #1aa3c3;
+}
+.formula__info,
+.formula__footer
+{
+    font-size: 14px;
+
+    overflow: hidden;
+
+    color: #555f64;
+}
+.formula__footer
+{
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+
+    border-top: 1px solid #e4e4e4;
+}
+.formula__info-days,
+.formula__info-month
+{
+    padding-left: 15px;
+}
+.formula__info-days
+{
+    padding-top: 80px;
+}
+.formula__info-month
+{
+    padding-top: 170px;
+}
+.formula__wrapper
+{
+    position: relative;
+}
+.formula__wrapper:before,
+.formula__wrapper:after
+{
+    position: absolute;
+    top: 20px;
+
+    display: block;
+
+    width: 11px;
+    height: 147px;
+
+    content: '';
+
+    background: url('../img/formula/wrapper.png') no-repeat 0 0;
+}
+.formula__wrapper:before
+{
+    left: 0;
+}
+.formula__wrapper:after
+{
+    right: 0;
+
+    background-position: -11px 0;
 }
 .otpusk
 {

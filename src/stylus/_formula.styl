@@ -1,0 +1,64 @@
+.formula
+    clearfix()
+
+    &__content
+        padding 15px
+        text-align center
+        font-size 18px
+        background #fff
+        border 1px solid #e4e4e4
+        box-shadow 0 2px 5px rgba(0,0,0,.14)
+        width 513px
+        float left
+
+    &__line
+        line-height 26px
+
+    &__number,
+    &__symbol
+        font-size 32px
+
+    &__symbol
+        color #1aa3c3
+
+    &__info,
+    &__footer
+        color #555f64
+        font-size 14px
+        overflow hidden
+
+    &__footer
+        margin 10px 0 0
+        padding 10px 0 0
+        border-top 1px solid #e4e4e4
+
+    &__info-days,
+    &__info-month
+        padding-left 15px
+
+    &__info-days
+        padding-top 80px
+
+    &__info-month
+        padding-top 170px
+
+    &__wrapper
+        position relative
+
+        &:before,
+        &:after
+            content ""
+            display block
+            position absolute
+            top 20px
+            bg(formula, wrapper)
+            width 11px
+            height 147px
+
+        &:before
+            left 0
+
+        &:after
+            right 0
+            background-position -11px 0
+
