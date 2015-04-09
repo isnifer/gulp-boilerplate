@@ -15,7 +15,7 @@ offset(ratio)
   margin-left (100/12) * unit(ratio, '%')
 
 setColumn(name, columns)
-  
+
   for num in (1..columns)
     &_{name}-{num}
       grid num
@@ -25,3 +25,13 @@ createOffset(name, columns)
   for num in (1..columns)
     &__offset_{name}-{num}
       offset num
+
+bg(blockName, elementName)
+  background url('../img/'blockName'/'elementName'.png') no-repeat 0 0
+
+clearfix()
+  &:after,
+  &:before
+    clear both
+    content ""
+    display table

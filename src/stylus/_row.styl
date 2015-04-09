@@ -1,2 +1,156 @@
 .row
   margin-bottom 15px
+
+#in-guidelines {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+#guidelines {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1150px;
+    min-height: 0;
+    overflow: visible;
+    position: relative;
+    z-index: -1000;
+}
+
+#guidelines .col-1 .box,
+#guidelines .col-edge-1 .box {
+    background: none repeat scroll 0 0 #717171;
+    height: 100%;
+    opacity: 0.25;
+}
+
+.for-guidelines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    DIV {
+        height: 100%;
+    }
+}
+
+.for-guidelines .col-1,
+.for-guidelines .col-edge-1 {
+    position: relative;
+}
+
+#in_guidelines{
+    margin: 0 30px;
+    z-index: -100;
+    position: relative;
+}
+#guidelines{
+    max-width:1150px;
+    margin:0 auto;
+    z-index:-100;
+    height: 0;
+    min-height: 0;
+    overflow: visible;
+    position: relative;
+
+    .col16 .box{
+        height:3000px;
+        background: #717171;
+        opacity:0.25;
+    }
+
+}
+
+
+.for_guidelines{
+    position: absolute;
+    width: 100%;
+}
+.for_guidelines .col16 {
+    position: relative;
+}
+
+#in_guidlines{
+    position:relative;
+    padding:15px 0 0 0;
+}
+.left-padding-grid{
+    position: absolute;
+    width: 35px;
+    height: 3000px;
+    background: #717171;
+    opacity: 0.25;
+    left: 0;
+    margin-left: -30px;
+}
+.right-padding-grid{
+    position: absolute;
+    width: 35px;
+    height: 3000px;
+    background: #717171;
+    opacity: 0.25;
+    right: 0;
+    margin-right: -30px;
+}
+
+.col{
+    width:100%;
+}
+
+.col16,
+.col32,
+.col33,
+.col34,
+.col48,
+.col50,
+.col64,
+.col66,
+.col82{
+    display: inline;
+    float: left;
+}
+
+.col16.first,
+.col16.last{width: 18%;}
+
+.col16 {width: 16%;}
+.col32 {width: 32%;}
+.col33 {width: 33%;}
+.col34 {width: 34%;}
+.col48 {width: 48%;}
+.col50 {width: 50%;}
+.col64 {width: 64%;}
+.col66 {width: 66%;}
+.col82 {width: 82%;}
+.col100{width: 100%;}
+
+
+.suffix_last{padding-right:18%;}
+.suffix_1{padding-right:16%;}
+.suffix_2{padding-right:34%;}
+.suffix_3{padding-right:50%;}
+.suffix_4{padding-right:66%;}
+.suffix_5{padding-right:82%;}
+
+.prefix_first_min{padding-left:15%;}
+.prefix_first{padding-left:18%;}
+.prefix_1{padding-left:16%;}
+.prefix_2{padding-left:34%;}
+.prefix_3{padding-left:50%;}
+.prefix_4{padding-left:66%;}
+.prefix_5{padding-left:82%;}
+
+.box{
+    margin:0 5px;
+    padding:0 15px;
+}
+
+.box .grid_p {
+    background: #efefef;
+    height: 5000px;
+    width: 100%;
+    opacity:0.5;
+    margin: 0;
+}
